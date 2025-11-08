@@ -3,9 +3,9 @@
 // JS Types = String Number Boolean Undefined Null
 // TS Extra Types = never, unknown, void
 
-let userName: String = "Emon";
+let userName: string = "Emon";
 userName = "Hossain";
-let userId = 123;
+let userId: number = 123;
 userId = "emon";
 
 let isAdmin = true;
