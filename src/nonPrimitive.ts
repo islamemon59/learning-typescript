@@ -1,19 +1,38 @@
-// Non Primitive 
+// Non Primitive
 // Array Object
 // Ts : Tuple
 
 let bazarLis: string[] = ["eggs", "vegetable", "milk", "sugar"];
 
-bazarLis.push("hi")
+bazarLis.push("hi");
 
 let mixedArr: (string | number)[] = ["apple", 1, "Guava", 3];
 
-mixedArr.push(15)
+mixedArr.push(15);
 
 let couple: [string, string] = ["Husband", "Wife"];
 
-couple[0] = 10
-couple[1] = 20
+couple[0] = 10;
+couple[1] = 20;
 
 let coordinates: [number, number, number] = [20, 30, 40];
-let destination: [string,string, number] = ["Dhaka", "Gazipur", 23]
+let destination: [string, string, number] = ["Dhaka", "Gazipur", 23];
+
+// Reference type: Object
+
+const user: {
+   readonly organization: string; // access modifier
+  firstName: string;
+  middleName?: string; // optional type
+  lastName: string;
+  isMarried: boolean;
+} = {
+    organization: "Programming Hero",
+  firstName: "Jhankar",
+  lastName: "Mahabub",
+  isMarried: true,
+};
+
+user.organization = "Programming Hero";
+
+console.log(user);
